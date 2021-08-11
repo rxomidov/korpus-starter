@@ -1,0 +1,176 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css"
+          integrity="sha384-AYmEC3Yw5cVb3ZcuHtOA93w35dYTsvhLPVnYs9eStHfGJvOvKxVfELGroGkvsg+p" crossorigin="anonymous"/>
+    <link rel="stylesheet" href="css/bootstrap.css">
+    <link rel="stylesheet" href="css/search-style.css">
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+<header class="my-4">
+    <div class="container d-flex justify-content-between align-items-center">
+        <div class="header-brand">
+            <img src="img/logo.png" width="90" alt="logo">
+        </div>
+        <nav class="header-nav">
+            <ul>
+                <li>
+                    <a href="#">Bosh sahifa</a>
+                </li>
+                <li>
+                    <a href="#">Korpusdan foydalanish</a>
+                </li>
+                <li>
+                    <a href="#">Statistik ma’lumotlar</a>
+                </li>
+                <li>
+                    <a href="#">Korpus haqida</a>
+                </li>
+            </ul>
+        </nav>
+        <div class="d-flex">
+            <button class="header-btn me-2">
+                Aloqa
+            </button>
+            <button class="btn btn-default hamburger-btn d-block d-md-none" onclick="openNav()">
+                &#9776
+            </button>
+        </div>
+    </div>
+    <div id="mySidenav" class="sidenav text-left">
+        <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+
+        <a class="side-about" href="#">Bosh sahifa</a>
+        <a href="#">Korpusdan foydalanish</a>
+        <a href="#">Statistik ma’lumotlar</a>
+        <a href="#">Korpus haqida</a>
+    </div>
+</header>
+<main class="main">
+    <div class="container">
+        <div class="row">
+            <div class="col-md-4 d-flex align-items-center">
+                <div class="left-content">
+                    <h1>TUG‘RO</h1>
+                    <h3>O‘zbek tili axborot matnlari korpusi</h3>
+                </div>
+            </div>
+            <div class="col-md-8">
+                <form id="form" method="post">
+                    <div class="inner-form">
+                        <div class="basic-search ">
+                            <div class="input-field shadow-lg bg-light">
+                                <input id="search" type="text" placeholder=" Qidiruv" class="form-control" name="q"
+                                       autocomplete="on" value="">
+                                <button id="submitButton" type="submit"><i class="fa fa-search"></i></button>
+                            </div>
+                        </div>
+                        <div class="row mb-2" style="padding-top: 5px;">
+                            <div class="col align-content-center">
+                                <span class="multi-select-morphologicTags"></span>
+                            </div>
+                            <div class="col align-content-center">
+                                <span class="multi-select-semanticTags"></span>
+                            </div>
+                        </div>
+                        <div class="container bg-white shadow-lg rounded">
+                            <div class="row">
+                                <div class="col-6 index-card">
+                                    <div class="row">
+                                        <div class="col-md-2 index-parent">
+                                            <i class="fa fa-newspaper-o index-icon text-primary"></i>
+                                        </div>
+                                        <div class="col-md-10 p-1">
+                                            <div class="value"> 0</div>
+                                            <div class="name"> Matnlar</div>
+                                        </div>
+                                    </div>
+                                    <div class="progress">
+                                        <div class="progress-bar" style="width: 10%;"></div>
+                                    </div>
+                                </div>
+                                <div class="col-6 index-card">
+                                    <div class="row">
+                                        <div class="col-md-2 index-parent">
+                                            <i class="fa fa-list index-icon text-success"></i>
+                                        </div>
+                                        <div class="col-md-10 p-1">
+                                            <div class="value"> 0</div>
+                                            <div class="name"> Gaplar</div>
+                                        </div>
+                                    </div>
+                                    <div class="progress">
+                                        <div class="progress-bar" style="width: 48%;"></div>
+                                    </div>
+                                </div>
+                                <div class="col-6 index-card">
+                                    <div class="row">
+                                        <div class="col-md-2 index-parent">
+                                            <i class="fa fa-list-ul index-icon text-warning"></i>
+                                        </div>
+                                        <div class="col-md-10 p-1">
+                                            <div class="value"> 0</div>
+                                            <div class="name"> Teglangan so'zlar</div>
+                                        </div>
+                                    </div>
+                                    <div class="progress">
+                                        <div class="progress-bar" style="width: 93%;"></div>
+                                    </div>
+                                </div>
+                                <div class="col-6 index-card">
+                                    <div class="row">
+                                        <div class="col-md-2 index-parent">
+                                            <i class="fa fa-list-alt index-icon text-danger"></i>
+                                        </div>
+                                        <div class="col-md-10 p-1">
+                                            <div class="value"> 0</div>
+                                            <div class="name"> Nutq bo'laklari</div>
+                                        </div>
+                                    </div>
+                                    <div class="progress">
+                                        <div class="progress-bar" style="width: 73%;"></div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </form>
+            </div>
+        </div>
+    </div>
+</main>
+<footer>
+    <div class="container footer-icons my-4">
+        <a href="#">
+            <img width="48" src="img/instagram.png" alt="icon">
+        </a>
+        <a href="#">
+            <img width="48" src="img/twitter.png" alt="icon">
+        </a>
+        <a href="#">
+            <img width="48" src="img/facebook.png" alt="icon">
+        </a>
+    </div>
+</footer>
+
+<script>
+
+    function openNav() {
+        document.getElementById("mySidenav").style.width = "200px";
+    }
+
+    function closeNav() {
+        document.getElementById("mySidenav").style.width = "0";
+    }
+
+</script>
+
+</body>
+</html>
