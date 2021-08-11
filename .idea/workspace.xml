@@ -1,7 +1,14 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="f6729c78-eec2-4121-be08-8a74b0de7d7a" name="Default Changelist" comment="" />
+    <list default="true" id="f6729c78-eec2-4121-be08-8a74b0de7d7a" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/css/bootstrap-select.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/css/dashboard.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/css/select-pure.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/index.html" afterDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -14,7 +21,11 @@
       </list>
     </option>
   </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+  </component>
   <component name="ProjectId" id="1waJKvWCnqXqVTpA0LN7k2a21LC" />
+  <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
   <component name="ProjectViewState">
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showExcludedFiles" value="true" />
@@ -22,6 +33,7 @@
   </component>
   <component name="PropertiesComponent">
     <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
+    <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="last_opened_file_path" value="$PROJECT_DIR$/img" />
     <property name="list.type.of.created.stylesheet" value="CSS" />
@@ -47,7 +59,7 @@
       <option name="presentableId" value="Default" />
       <updated>1628690706356</updated>
       <workItem from="1628690709542" duration="4012000" />
-      <workItem from="1628694913676" duration="1613000" />
+      <workItem from="1628694913676" duration="3179000" />
     </task>
     <servers />
   </component>
@@ -55,13 +67,17 @@
     <option name="version" value="1" />
   </component>
   <component name="WindowStateProjectService">
-    <state x="516" y="186" key="#com.intellij.fileTypes.FileTypeChooser" timestamp="1628691395167">
+    <state x="516" y="186" key="#com.intellij.fileTypes.FileTypeChooser" timestamp="1628697345389">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
-    <state x="516" y="186" key="#com.intellij.fileTypes.FileTypeChooser/0.0.1536.824@0.0.1536.824" timestamp="1628691395167" />
+    <state x="516" y="186" key="#com.intellij.fileTypes.FileTypeChooser/0.0.1536.824@0.0.1536.824" timestamp="1628697345389" />
     <state x="436" y="100" key="#com.intellij.refactoring.safeDelete.UnsafeUsagesDialog" timestamp="1628691296024">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
     <state x="436" y="100" key="#com.intellij.refactoring.safeDelete.UnsafeUsagesDialog/0.0.1536.824@0.0.1536.824" timestamp="1628691296024" />
+    <state x="261" y="75" key="Vcs.Push.Dialog.v2" timestamp="1628698111357">
+      <screen x="0" y="0" width="1536" height="824" />
+    </state>
+    <state x="261" y="75" key="Vcs.Push.Dialog.v2/0.0.1536.824@0.0.1536.824" timestamp="1628698111357" />
   </component>
 </project>

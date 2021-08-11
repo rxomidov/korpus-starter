@@ -1,0 +1,39 @@
+.index-parent {
+    color: #BDBDBD;
+    display: inline-block;
+    font-size: 18px;
+    text-align: center;
+    vertical-align: middle;
+    /*width: 25px;*/
+    margin-top: 15px;
+}
+
+.index-icon {
+    box-sizing: border-box;
+    font-size: 30px;
+}
+
+.index-card {
+    margin-bottom: 15px;
+}
+
+.value {
+    font-size: 22px;
+}
+
+.name {
+    font-size: 16px;
+}
+
+.progress {
+    height: 2px;
+    margin: 5px 0;
+    /*color: #85CE36;*/
+    background-color: #dddddd;
+}
+
+@media screen and (max-width: 768px) {
+    .index-parent {
+        width: 25px;
+    }
+}

@@ -10,6 +10,9 @@
           integrity="sha384-AYmEC3Yw5cVb3ZcuHtOA93w35dYTsvhLPVnYs9eStHfGJvOvKxVfELGroGkvsg+p" crossorigin="anonymous"/>
     <link rel="stylesheet" href="css/bootstrap.css">
     <link rel="stylesheet" href="css/search-style.css">
+    <link rel="stylesheet" href="css/bootstrap-select.css" />
+    <link rel="stylesheet" href="css/select-pure.css" />
+    <link rel="stylesheet" href="css/dashboard.css" />
     <link rel="stylesheet" href="css/style.css">
 </head>
 <body>
@@ -56,13 +59,13 @@
 <main class="main">
     <div class="container">
         <div class="row">
-            <div class="col-md-4 d-flex align-items-center">
+            <div class="col-lg-4 d-flex align-items-center">
                 <div class="left-content">
                     <h1>TUG‘RO</h1>
                     <h3>O‘zbek tili axborot matnlari korpusi</h3>
                 </div>
             </div>
-            <div class="col-md-8">
+            <div class="col-lg-8">
                 <form id="form" method="post">
                     <div class="inner-form">
                         <div class="basic-search ">
@@ -85,7 +88,7 @@
                                 <div class="col-6 index-card">
                                     <div class="row">
                                         <div class="col-md-2 index-parent">
-                                            <i class="fa fa-newspaper-o index-icon text-primary"></i>
+                                            <i class="fa fa-newspaper index-icon text-primary"></i>
                                         </div>
                                         <div class="col-md-10 p-1">
                                             <div class="value"> 0</div>
@@ -160,10 +163,40 @@
     </div>
 </footer>
 
+<style>
+    .dim {
+        z-index: 2;
+        pointer-events: all;
+        background-color: rgba(0, 0, 0, .6);
+    }
+    #search {
+        border-radius: 0;
+        background: #f1f1f1;
+        height: 60px;
+        width: 90%;
+        float: left
+    }
+    #submitButton {
+        width: 10%;
+        float: left;
+        height: 60px;
+        background: #2196F3;
+        border: none;
+        color: #fff;
+    }
+    @media screen and (max-width: 768px) {
+        #search {
+            width: 80%;
+        }
+        #submitButton {
+            width: 20%;
+        }
+    }
+</style>
 <script>
 
     function openNav() {
-        document.getElementById("mySidenav").style.width = "200px";
+        document.getElementById("mySidenav").style.width = "220px";
     }
 
     function closeNav() {
