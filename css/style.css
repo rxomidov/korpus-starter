@@ -19,7 +19,7 @@ body{
     flex-direction: column;
     justify-content: space-between;
     width: 100vw;
-    height: 100vh;
+    min-height: 100vh;
     font-size: 14px;
 }
 
@@ -81,6 +81,14 @@ a{
 .left-content h3{
     font-size: 1.8rem;
 }
+.paragraph:first-letter{
+    margin-left: 2rem;
+}
+.paragraph{
+    text-align: justify;
+}
+
+
 
 .sidenav {
     height: 100%;
