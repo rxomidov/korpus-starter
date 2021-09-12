@@ -121,8 +121,12 @@ p.bold {
     width: 100%;
     box-shadow: 0px 2px 8px rgba(0,0,0,0.1);
 }
-
-
+.table td p{
+    font-weight: 600;
+}
+.table-width{
+    width: 75%;
+}
 
 .sidenav {
     height: 100%;
@@ -186,5 +190,8 @@ p.bold {
     }
     .use-content-img img{
         width: 100%;
+    }
+    .table-width{
+        width: 96%;
     }
 }
