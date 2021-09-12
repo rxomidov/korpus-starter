@@ -2,7 +2,7 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <link rel="icon" href="img/favicon.ico" />
+    <link rel="icon" href="img/favicon.ico"/>
     <meta name="viewport"
           content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
@@ -59,21 +59,86 @@
 </header>
 <main class="main">
     <section class="container">
-        <div class="">
+        <div class="use-content">
             <p class="paragraph mt-5 fs-5">
-                Tug‘ro nomli korpus platformasi “O‘zbek tilining internet axborot matnlari korpusini shakllantirishning
-                nazariy va amaliy asoslari” mavzusidagi PhD doktorlik dissertatsiyasi doirasida yaratildi.
-                Korpusning asosiy maqsadi tilshunoslik tadqiqotlarini olib borish ishlarini osonlashtirish, ularni
-                haqiqiy misollar bilan boyitishga xizmat qilishi nazarda tutilgan. Tugʻro nomli korpus platformasidan
-                tilning ma’lum boʻlimlarining savollariga javob beruvchi statistik tahlillar oʻtkazish, nazariy
-                qarashlarni, tildagi hodisalar yoki lingvistik qoidalarni tekshirish uchun foydalaniladi. Jahonning
-                boshqa korpus platformalaridan andozalar olindi.
-                Ushbu platforma tilshunoslar, shu yoʻnalishda oʻqiyotgan talabalar, tarjimonlar, oʻzbek tili
-                oʻqituvchilari, filolog mutaxassislar, statistik tahlilchilar uchun moʻljallangan boʻlib, u ochiq
-                maydondagi mahsulot hisoblanadi va u doimiy rivojlantirilib imkoniyatlari kengayib boradi. Bundan
-                tashqari ushbu platformadan olinadigan xulosalar oʻzbek tilidagi tabiiy tilni qayta ishlash (NLP),
-                mashina tarjimasi (Machine Translation) sohalari uchun ham birlamchi manba hisoblanadi.
+                Bosh sahifa orqali foydalanuvchi korpusda qidiruv amallarini bajarishi va lingvistik tahlil natijalariga
+                ega bo‘lishi, korpus statistikasi haqida ma’lumot olishi mumkin.
             </p>
+            <p class="paragraph bold my-3 fs-5">
+                Platformada uch xil usul bilan tahlil natijalariga ega bo‘lish mumkin:
+            </p>
+            <p class="paragraph my-3 fs-5">
+                <b>1. Faqat so‘z qidiruvi orqali: </b>bunda qidiruv qatoriga istalgan so‘z yoziladi. Agar tahlilga
+                tortilgan so‘z korpusda teglangan bo‘lsa, u barcha grammatik ko‘rsatgichlari bilan ko‘rinadi.
+                Masalan, “sinov” so‘zi qidirilganda:
+            </p>
+            <div class="use-content-img">
+                <img src="img/foydalanish/1.png" alt="image">
+            </div>
+            <p class="paragraph my-3 fs-5">
+                Tahlilga tortilgan so‘z barcha morfologik ko‘rsatgichlarini olgan holda ko‘rinadi. Yuqoridagi holat
+                korpusning oddiy formati hisoblanadi. Agar foydalanuvchi so‘zning boshqa so‘zlar bilan birikish
+                holatini tahlilga tortmoqchi bo‘lsa, KWIC (keyword in context) formatiga o‘tkazishi mumkin.
+            </p>
+            <div class="use-content-img">
+                <img src="img/foydalanish/2.png" alt="image">
+            </div>
+            <p class="paragraph my-3 fs-5">
+                Tahlilga tortilgan nutq birliklarining morfologik va semantik xususiyatlari haqida izohlardan ma’lumot
+                olishi mumkin. Buning uchun so‘z ustiga sichqoncha olib boriladi va bosiladi. Maxsus popup orqali
+                ma’lumotlar olinadi. Masalan, “sinovlarini” nutq birligi lingvistik tahlilga tortilganda quyidagicha
+                ma’lumotni oladi.
+            </p>
+            <div class="use-content-img">
+                <img src="img/foydalanish/3.png" alt="image">
+            </div>
+            <p class="paragraph my-3 fs-5">
+                “Sinovlarini” so‘zining lemmasi “sinov”, morfologik ko‘rsatgichlari – ot so‘z turkumida, ko‘plik,
+                3-shaxs egalik qo‘shimchasi va tushum kelishigini olgan. Semantik kategoriyasiga ko‘ra mavhum ot
+                hisoblanadi. Popupda morfologik va semantik ko‘rsatgichlar maxsus teglar ostida berilgan.
+                Foydalanuvchiga qulay bo‘lishi uchun morfologik va semantik teglar to‘liq nomi, tanlangan kodi va
+                ularning ingliz tilidagi variantlari berildi.
+            </p>
+            <p class="paragraph my-3 fs-5">
+                <b>2. So‘z+teg qidiruvi: </b>bu bosqichda ma’lum bir so‘z turkumidagi so‘zning morfologik yoki semantik
+                xususiyati tahlil qilinishi mumkin. Masalan, muayyan morfologik ko‘rsatgichli so‘z tahlilga tortilgan
+                bo‘lsa, qidiruv qatoriga so‘z yoziladi, morfologik teglar qatoridan teg tanlanadi. Bunda morfologik
+                ko‘rsatgich tanlanish vaqtida albatta so‘z turkumi belgilanishi kerak. Masalan, “sinov” so‘zining faqat
+                ko‘plik shakli tahlilga tortilgan.
+            </p>
+            <div class="use-content-img">
+                <img src="img/foydalanish/4.png" alt="image">
+            </div>
+            <p class="paragraph my-3 fs-5">
+                Xuddi shunday muayyan LMGiga tegishli nutq birligi qidiruvida ham muhim natijalar olinadi.
+            </p>
+            <p class="paragraph my-3 fs-5">
+                <b>3. Faqat teg orqali qidiruv: </b>bu variantda tadqiqotchi uchun muayyan so‘z turkumidagi qaysidir
+                morfologik ko‘rsatgichga yoki qaysidir semantik guruhga tegishli nutq birliklari kerak bo‘lganda
+                foydalandi. Masalan, fe’l so‘z turkumidagi kelasi zamon fe’li morfologik ko‘rsatgichiga ega nutq birligi
+                qidiruvga berilsa, quyidagicha natija olingan.
+            </p>
+            <div class="use-content-img">
+                <img src="img/foydalanish/5.png" alt="image">
+            </div>
+            <p class="paragraph my-3 fs-5">
+                Nutq birligi tahlilga tortilganda, korpusda qidiruvga berilgan so‘z teglangan bo‘lsa tadqiqotchi
+                quyidagi muhim ma’lumotlarga ega bo‘ladi:
+            </p>
+            <ul>
+                <li><b>1. Lemma </b>(nutq birligi lemmasi).</li>
+                <li><b>2. Grammatika: </b>bu teglar roʻyxatida berilgan umumiy teglarni olgan yoki olmaganligi aks etadi.
+                    Morfologik ko‘rsatgichlari namoyon bo‘ladi.
+                </li>
+                <li><b>3. Semantika: </b>qoʻshimcha teglar, bunda soʻzning semantikasi aks etadigan teglari oʻrin oladi.</li>
+                <li><b>4. Matnlarda umumiy uchrash chastotasi.</b></li>
+                <li><b>5. KWIC (keyword in context): </b>Bu soʻzlarning birikuv qobiliyatini koʻrsatib beruvchi qism
+                    hisoblanadi.
+                </li>
+                <li><b>6. Manba va matn. </b>Tadqiqotchi matn olingan manbaga yoki tahlilga tortilgan nutq birligi ishtirok
+                    etgan matnga bevosita murojaat qilishi mumkin.
+                </li>
+            </ul>
         </div>
         <div class="text-center">
             <div class="row">
@@ -215,14 +280,16 @@
 </footer>
 
 <style>
-    body{
+    body {
         overflow-x: hidden;
     }
-    header{
+
+    header {
         background: linear-gradient(45deg, rgba(196, 255, 236, 0.9) 0%,
         rgba(181, 212, 251, 0.9) 100%), url("img/monument.jpg") top center no-repeat;
         background-size: cover;
     }
+
     .swiper-button-prev, .swiper-button-next {
         width: 40px;
         height: 40px;
@@ -273,10 +340,12 @@
         border-top-right-radius: 0.5rem;
         border-top-left-radius: 0.5rem;
     }
+
     .blog-card-body {
         min-height: 12rem;
     }
-    .blog-author{
+
+    .blog-author {
         padding: 0.5rem;
     }
 </style>

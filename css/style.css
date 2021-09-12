@@ -1,3 +1,5 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@400;600&display=swap');
+
 @font-face {
     font-family: 'Gilroy';
     src: local('Gilroy Semibold'), local('Gilroy-Semibold'),
@@ -8,7 +10,7 @@
     font-style: normal;
 }
 
-body{
+body {
     font-family: Gilroy, sans-serif;
     margin: 0;
     padding: 0;
@@ -22,18 +24,26 @@ body{
     min-height: 100vh;
     font-size: 14px;
 }
-
-a{
+a {
     text-decoration: none;
     color: #555;
 }
+p {
+    font-family: Montserrat, sans-serif;
+    font-weight: 400;
+}
+p.bold {
+    font-family: Montserrat, sans-serif;
+    font-weight: 600;
+}
 
-.header-nav{
+.header-nav {
     min-width: 600px;
     align-items: center;
     justify-content: space-between;
 }
-.header-nav ul{
+
+.header-nav ul {
     display: flex;
     list-style: none;
     margin: 0;
@@ -41,13 +51,16 @@ a{
     align-items: center;
     justify-content: space-between;
 }
-.header-nav ul li a{
+
+.header-nav ul li a {
     transition: 0.3s ease-in-out;
 }
-.header-nav ul li a:hover{
+
+.header-nav ul li a:hover {
     color: dodgerblue;
 }
-.header-btn{
+
+.header-btn {
     background: transparent;
     padding: 0.7rem 2rem;
     border: 2px solid #999;
@@ -55,37 +68,58 @@ a{
     font-size: 1.2rem;
     transition: 0.3s ease-in-out;
 }
-.header-btn:hover{
+
+.header-btn:hover {
     background: #fff;
 }
-.hamburger-btn{
-    outline: none!important;
+
+.hamburger-btn {
+    outline: none !important;
     font-size: 2rem;
 }
-.footer-icons a{
+
+.footer-icons a {
     margin: 0.5rem;
 }
-.footer-icons a img{
+
+.footer-icons a img {
     transition: 0.3s ease-in-out;
     filter: grayscale(1);
 }
-.footer-icons a img:hover{
+
+.footer-icons a img:hover {
     filter: grayscale(0);
 }
-.left-content{
+
+.left-content {
     width: 80%;
 }
-.left-content h1{
+
+.left-content h1 {
     font-size: 3.2rem;
 }
-.left-content h3{
+.left-content h3 {
     font-size: 1.8rem;
 }
-.paragraph:first-letter{
+.paragraph:first-letter {
     margin-left: 2rem;
 }
-.paragraph{
+.paragraph {
     text-align: justify;
+}
+.use-content ul{
+    list-style: none;
+    font-size: 1.2rem;
+    font-family: Montserrat, sans-serif;
+}
+.use-content-img{
+    width: 75%;
+    margin: 0 auto;
+    padding: 2rem;
+}
+.use-content-img img{
+    width: 100%;
+    box-shadow: 0px 2px 8px rgba(0,0,0,0.1);
 }
 
 
@@ -115,7 +149,7 @@ a{
 
 .sidenav a:hover {
     color: dodgerblue;
-    background-color: rgba(255,255,255,0.15);
+    background-color: rgba(255, 255, 255, 0.15);
 }
 
 .sidenav .closebtn {
@@ -129,18 +163,28 @@ a{
 }
 
 @media screen and (max-width: 768px) {
-    .header-nav{
+    .header-nav {
         display: none;
     }
-    .left-content{
+
+    .left-content {
         width: 100%;
     }
-    .left-content h1{
+
+    .left-content h1 {
         font-size: 2rem;
         text-align: center;
     }
-    .left-content h3{
+
+    .left-content h3 {
         font-size: 1.2rem;
         text-align: center;
+    }
+    .use-content-img{
+        width: 100%;
+        padding: 2rem;
+    }
+    .use-content-img img{
+        width: 100%;
     }
 }
